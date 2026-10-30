@@ -1,12 +1,11 @@
 TraeToAPI
 Copyright (c) 2026 autumnsentiment and contributors
 
-This project is released under the MIT License. See LICENSE.
+Released under the MIT License. See LICENSE.
 
-本仓库基于原作者 autumnsentiment 的 Trae CN / Solo CN 反代项目（社区常见仓库名
-如 Trae2api-cn）整理与本地改动后发布，版权仍归原作者及贡献者；维护者仅对本地
-修改负责，不主张替代原作者版权。
+本仓库基于原作者 autumnsentiment 的项目
+https://github.com/autumnsentiment/Trae2api-cn
+做本地改动后发布。版权仍归原作者及贡献者；本仓库维护者仅对相对原项目的改动负责。
 
 Upstream product names (Trae, Trae CN, Trae Solo, TraeWork, etc.) belong to
-their respective owners. This project is an unofficial compatibility layer
-for learning and interoperability purposes only.
+their respective owners.
