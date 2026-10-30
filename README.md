@@ -4,6 +4,8 @@
 
 Trae CN / Trae Solo CN 模型反代。把 Trae 的 Remote / IDE / Work 模型通道包装成 OpenAI 兼容 API（Chat Completions + Responses），支持调用方工具调用、thinking 分离输出、思考强度映射、多账号并发轮询、每日签到和积分消费记录，可直接接入 Codex、new-api 和各类 OpenAI SDK。
 
+**本仓库是原作者 [autumnsentiment](https://github.com/autumnsentiment) 项目的整理与本地改动版**（上游常见仓库名如 [Trae2api-cn](https://github.com/autumnsentiment/Trae2api-cn)）。版权仍归原作者；这里只保留实际改过的部分与可运行源码，不冒充官方或原作者本人发布。
+
 **仅供学习使用。请勿用于商业用途。**
 
 ## 特点
@@ -534,10 +536,10 @@ sudo bash scripts/backup_runtime.sh
 脚本会短暂停止并自动重启容器，备份写入 `backups/<timestamp>-runtime/`，
 同时生成镜像归档和 SHA-256 校验清单。`.env` 与 `data` 含敏感状态，备份目录权限为 `0700`，文件为 `0600`。
 
-## 开源协议
+## 开源协议与归属
 
-MIT License
+MIT License（见 [LICENSE](LICENSE)）
 
 Copyright (c) 2026 autumnsentiment
 
-本项目仅用于学习和研究目的。使用本项目产生的任何后果由使用者自行承担。
+本仓库基于原作者项目做了本地改动后开源；署名与协议保持原样，详见 [NOTICE](NOTICE)。本项目仅用于学习和研究目的，使用后果由使用者自行承担。
