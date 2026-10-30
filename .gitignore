@@ -1,0 +1,76 @@
+# 运行状态与凭证（含 token，禁止入库）
+/.env
+/.env.*
+!/.env.example
+/.env.local
+/data/*
+!/data/.gitkeep
+!/data/README.md
+/logs/
+/work/
+/workdir/
+/output/
+/.native/
+
+# 本地网关日志与崩溃落盘
+*.log
+/crash.log
+/env-check.txt
+/gateway.log
+
+# Python 与测试缓存
+__pycache__/
+*.py[cod]
+*$py.class
+/.pytest_cache/
+/.mypy_cache/
+/.ruff_cache/
+/.venv/
+/.venv-build/
+/venv/
+pytest-of-*/
+trae-relay-test-*/
+pip-*/
+tmpl*
+
+# PyInstaller 工作目录与产物
+/build/
+/dist/
+
+# 自签名证书与私钥（仅本机保留；可用 scripts/make_signing_cert.ps1 重新生成）
+/certs/
+*.pfx
+*.cer
+
+# 本地诊断与一次性脚本（可能含账号标识或主机凭证）
+/_*.py
+/tmp*.py
+/temp*.txt
+/deploy*.py
+/check_*.py
+/verify*.py
+/patch_*.py
+/redeploy*.py
+/fix_perms.py
+/switch_upstream.py
+/traework_inspection.txt
+
+# 本地归档、分享包与生成产物
+/_archive/
+/backups/
+/_baseline_src/
+/分享包/
+/*.bundle
+/*.tgz
+/*.tar.gz
+/*.bin
+*.bak
+*.zip
+
+# 编辑器 / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo

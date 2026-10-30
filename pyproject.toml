@@ -1,0 +1,38 @@
+[project]
+name = "traetoapi"
+version = "1.0.10"
+description = "Trae CN / Trae Solo CN 模型反代：把 Trae 的 Remote / IDE / Work 模型通道包装成 OpenAI 兼容 API（Chat Completions + Responses + Anthropic Messages）"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "autumnsentiment" }]
+keywords = ["trae", "openai", "anthropic", "relay", "proxy", "fastapi"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Framework :: FastAPI",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi>=0.115,<1",
+    "anyio>=3.6.2,<5",
+    "uvicorn>=0.30,<1",
+    "httpx>=0.27,<1",
+    "python-dotenv>=1.0,<2",
+    "cryptography>=42,<50",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+exclude = ["backups", "data"]

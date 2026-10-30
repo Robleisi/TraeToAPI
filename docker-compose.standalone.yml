@@ -1,0 +1,19 @@
+# 独立部署：不依赖外部 new-api 网络。
+# 用法：docker compose -f docker-compose.standalone.yml up -d --build
+services:
+  traetoapi:
+    build:
+      context: .
+      args:
+        RELAY_BUILD_REVISION: "${RELAY_BUILD_REVISION:-local}"
+    image: traetoapi:latest
+    container_name: traetoapi
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: true
+    ports:
+      - "${RELAY_PORT:-8000}:8000"
+    volumes:
+      - ./.env:/app/.env
+      - ./data:/app/data

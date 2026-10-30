@@ -1,0 +1,10 @@
+TraeToAPI
+Copyright (c) 2026 autumnsentiment and contributors
+
+This project is released under the MIT License. See LICENSE.
+
+Portions of the protocol relay design and documentation derive from the
+community Trae CN OpenAI-compatible relay lineage (including Trae2api-cn).
+Upstream product names (Trae, Trae CN, Trae Solo, TraeWork, etc.) belong to
+their respective owners; this project is an unofficial compatibility layer
+for learning and interoperability purposes only.

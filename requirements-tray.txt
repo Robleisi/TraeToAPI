@@ -1,0 +1,7 @@
+# TraeToAPI 桌面版（托盘 + 打包）构建依赖
+# 仅构建 TraeToAPI.exe / 生成图标时需要；运行 relay 本体只需 requirements.txt
+# 托盘为原生 Win32（ctypes 调用 Shell_NotifyIcon），不依赖 pystray
+-r requirements.txt
+
+pillow>=10,<12
+pyinstaller>=6,<9
